@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Constitución Española</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      min-height: 100vh;
+      font-family: 'Comic Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    #quiz-container {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 40px rgba(60,100,200,0.11), 0 1.5px 6px rgba(0,0,0,0.08);
+      max-width: 470px;
+      width: 100%;
+      margin: 40px 0;
+      padding: 36px 28px 28px 28px;
+      box-sizing: border-box;
+      transition: box-shadow 0.3s;
+    }
+    h1 {
+      text-align: center;
+      color: #2a5298;
+      margin-bottom: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .progress {
+      margin-bottom: 22px;
+      font-size: 1.1em;
+      color: #5b6b7a;
+      text-align: right;
+    }
+    .question {
+      font-size: 1.18em;
+      color: #1c3144;
+      font-weight: 600;
+      margin-bottom: 18px;
+      line-height: 1.4;
+      text-align: center;
+    }
+    .options {
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .option-label {
+      background: #f6f9fe;
+      border: 2px solid #e3eafc;
+      border-radius: 10px;
+      padding: 11px 14px;
+      cursor: pointer;
+      transition: background 0.18s, border 0.18s, color 0.18s;
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      user-select: none;
+    }
+    .option-label:hover, .option-label.selected {
+      background: #e0eafc;
+      border-color: #7da5e0;
+      color: #2a5298;
+    }
+    .option-label input[type="radio"] {
+      accent-color: #2a5298;
+      margin-right: 8px;
+    }
+    .feedback {
+      font-size: 1.1em;
+      margin: 16px 0 8px 0;
+      font-weight: 600;
+      min-height: 28px;
+      text-align: center;
+    }
+    .correct {
+      color: #2ecc40;
+    }
+    .incorrect {
+      color: #e74c3c;
+    }
+    .answer {
+      color: #2a5298;
+      font-weight: 500;
+      text-align: center;
+      display: block;
+    }
+    .result {
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #2a5298;
+      margin-top: 30px;
+    }
+    .btn {
+      background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 28px;
+      font-size: 1.08em;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, transform 0.12s;
+      margin-top: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 1.5px 6px rgba(42,82,152,0.08);
+    }
+    .btn:active {
+      transform: scale(0.97);
+    }
+    @media (max-width: 600px) {
+      #quiz-container {
+        padding: 18px 6vw 20px 6vw;
+      }
+      h1 {
+        font-size: 1.15em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Test Constitución Española</h1>
+  </div>
+  <script src="test.js"></script>
+</body>
+</html>
